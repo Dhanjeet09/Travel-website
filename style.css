@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%; 
+}
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;  
+}
+
+#nav {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -2%;
+  background-color: transparent;
+  /* box-shadow: 100px 100px 100px 100px rgba(112, 110, 110, 0.387) inset; */
+  filter: drop-shadow(10px 7px 10px);
+}
+
+#lnav {
+  padding: 20px;
+}
+
+#rnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  padding: 20px;
+  font-size: 19.5px;
+}
+
+li {
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.531);
+}
+
+li:hover {
+  color: #20C7CA;
+  text-decoration: 1px solid underline;
+}
+
+.menu {
+  font-size: 18px;
+  display: none;
+}
+
+h1 img {
+  width: 30px;
+  transform: translate(5px, 5px);
+}
+
+.button {
+  border: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  background-color:  #20C7CA;;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: #20C7CA;
+  background-color: #fff;
+  border: 1px solid #20C7CA;
+}
+
+
+#page1{
+  width: 100%;
+  height: 100vh;
+
+  
+  background-position: center;
+ 
+  
+}
+#page1>video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  object-position: center;
+  background-color: #000000;
+  filter:brightness(50%);
+  filter: contrast(100%);
+  filter: saturate(150%);
+  position: absolute;
+  z-index: 0;
+}
+
+#page1>.text{
+  width: 100%;
+  height: 700px;
+  /* background-color: #00000056; */
+  position: absolute;
+ 
+  padding: 10% 10%;
+  
+  z-index: 1;
+  color: white;
+
+  
+}
+
+
+.text>h1{
+  position: absolute;
+  font-size: 89px;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 70px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.text>p{
+  font-size: 30px;
+  margin-top: 18%;
+  font-family: 'Solway', serif;
+}
+
+.text>button{
+  margin-top: 4%;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 50px;
+  background-color: #20C7CA;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.text>button:hover{
+  background-color: transparent;
+  border: 2px solid white;
+}
+.text>button>.i1{
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+#page2{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+
+}
+.left{
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.left .t h1{
+  /* padding-bottom: 100px; */
+  font-size: 48px;
+  line-height: 50px;
+  color: #222222;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.left .m p{
+  /* margin-top: -50px; */
+  font-size: 15px;
+
+  
+  font-family: 'Solway', serif;
+}
+#page2 .right{
+  margin-top: -100px;
+  width: 40%;
+  height: 60%;
+  background-image: url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/dots-green.png);
+  
+}
+.img1{
+  margin-top: 15%;
+  height: 300px;
+  border-radius: 20px;
+}
+.img2{
+  margin-top: -800px;
+  height: 250px;
+  border-radius: 20px;
+  transform: translate(220px,-195px);
+}
+.img3{
+  margin-top: -800px;
+  height: 180px;
+  border-radius: 20px;
+  transform: translate(220px,80px);
+}
+.right>.img1:hover{
+  
+  animation-name: updown;
+  animation: updown 1.3s linear  infinite both ;
+}
+@keyframes updown {
+  0%{
+
+  }
+  50%{
+    transform: translate(0,-10px);
+  }
+  100%{
+    transform: translate(0,0px);
+  }
+}
+#page3{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.imgbox1,.imgbox2,.imgbox3,.imgbox4{
+  width: 25%;
+  height: 80%;
+  color: white;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+   
+}
+.imgbox1>h1,.imgbox2>h1,.imgbox3>h1,.imgbox4>h1{
+  transform: translate(0,170px); 
+  font-family: 'IBM Plex Sans', sans-serif; 
+  margin-top: -20%;
+}
+.imgbox1>h2,.imgbox2>h2,.imgbox3>h2,.imgbox4>h2{
+  font-size: 20px;
+  color: #f9f9f9d9;
+  transform: translate(0,20px);
+  
+  font-family: 'Solway', serif;
+}
+.imgbox1{
+  background-image: url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/golden-hour-at-anse-source-d-argent-exotic-beach-a-small.jpg);
+}
+.imgbox2{
+  background-image: url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/underwater-scene-with-reef-and-tropical-fish-small.jpg);
+}
+.imgbox3{
+  background-image: url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/aerial-photo-of-seychelles-tropical-beach-anse-sou-small.jpg);
+}
+.imgbox4{
+  background-image: url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/underwater-reefscape-small1.jpg);
+}
+
+.imgbox1>button,.imgbox2>button,.imgbox3>button,.imgbox4>button{
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #20C7CA;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+}
+.imgbox1>button:hover,.imgbox2>button:hover,.imgbox3>button:hover,.imgbox4>button:hover{
+  background-color: transparent;
+  border: 2px solid white;
+}
+.imgbox1>button>.i1,.imgbox2>button>.i1,.imgbox3>button>.i1,.imgbox4>button>.i1{
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.imgbox1:hover,.imgbox2:hover,.imgbox3:hover,.imgbox4:hover{
+  box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.387) inset;
+ 
+}
+
+#page4{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+}
+.left5{
+  width: 40%;
+  height: 60%;
+  background-image: url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/dots-green.png);
+  
+}
+.left5>.img1{
+  height: 250px;
+  transform: translate(80px,-70px);
+}
+.left5>.img2{
+  height: 150px;
+  transform: translate(300px,-30px);
+}
+
+.left5>.img1:hover{
+  
+  animation-name: down;
+  animation: down 1.3s linear  infinite both ;
+}
+@keyframes down {
+  0%{
+
+  }
+  50%{
+    transform: translate(80px,-80px);
+  }
+  100%{
+    transform: translate(80px,-70px);
+  }
+}
+.right5{
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+.right5>h1{
+  font-size: 45px;
+  line-height: 50px;
+  color: #222222;
+  margin-top: -80px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.right5>p{
+  color: rgba(0, 0, 0, 0.717);
+  font-size: 15px;
+  font-family: 'Solway', serif;
+}
+
+#page5{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  
+}
+.background{
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.365)), url(https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/tropical-fishes-meet-in-blue-coral-reef-sea-water-small.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.background>h2{
+  font-size: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.background>h1{
+  font-size: 60px;
+  font-family: 'Alatsi';
+}
+.background>img{
+  height: 80px;
+  width: 80px;
+  border-radius: 80%;
+  padding: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+#page6{
+  margin-bottom: 10%;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.p-6-box{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #ffffff;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  height: 40vh;
+  width: 80%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+background-image: url("https://templatekit.kotakkuning.com/sealosca/wp-content/uploads/sites/3/2020/07/yacht-in-the-bay-view-from-the-air-small.jpg");
+background-repeat: no-repeat;
+background-position: center;
+box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.387) inset;
+
+}
+#page6 button{
+  
+  padding: 20px 60px;
+  border: none;
+  border-radius: 50px;
+  background-color: #20C7CA;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#page6 button:hover{
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+#page7{
+  background-color: #2e2e2e;
+  width: 100%;
+  height: fit-content;
+  
+}
+
+footer {
+  color: #20C7CA;
+  margin-top: 20vh;
+  width: 80vw;
+  height: fit-content;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+footer > .top {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #140861; */
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.379);
+}
+footer > .top > .left {
+  /* transform: translate(0px,-100px); */
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  width: 40vw;
+}
+.left p {
+  width: 21vw;
+  color: #ffffff;
+}
+
+footer > .top > .right {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right .line h1 {
+  padding-bottom: 4vh;
+}
+
+.right .line p {
+  padding-bottom: 1vh;
+  color: #ffffff;
+}
+
+footer > .down {
+  /* background-color: #aab518; */
+  width: 80vw;
+  display: flex;
+  margin-left: 0.01vw;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 0%;
+  color: #ffffff;
+}
